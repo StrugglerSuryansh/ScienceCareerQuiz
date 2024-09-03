@@ -26,7 +26,7 @@ const gameTimeLimit = 30;
 const resetGame = () => {
   correctLetters = new Set();
   wrongGuessCount = 0;
-  hangmanImage.src = "https://png.pngtree.com/png-clipart/20240116/original/pngtree-teacher-teaching-learning-professional-middle-aged-chemistry-teacher-character-3d-career-png-image_14124055.png";
+  hangmanImage.src = "/image.png";
   guessesText.innerText = `${wrongGuessCount} / ${maxGuesses}`;
   keyboardDiv.querySelectorAll("button").forEach((btn) => (btn.disabled = false));
   wordDisplay.innerHTML = currentWord.split("").map(() => `<li class="letter"></li>`).join("");
